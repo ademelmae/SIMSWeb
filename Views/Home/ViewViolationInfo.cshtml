@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Information</title>
+    <link rel="stylesheet" href="/css/sidebar.css">
+    <link rel="stylesheet" href="/css/infodesign.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha384-pUkAxYn1ae+Whn2pZpFeDnkF+PnTEPCQ5T08qPl3l/v5UaCaxrC+B1ZJbA2T3ImT" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header--wrapper">
+            <div class="header--title">
+                <span style="color: white;font-weight: bold; font-size: 20px">SASO-<span
+                        style="color: rgb(255, 255, 255)55, 255, 255);">IMS</span></span>
+                <h2 style="color:white;">Violation Record</h2>
+            </div>
+            <div class="user--info">
+                <img src="/lib/guidancelogo.png" alt="">
+            </div>
+        </div>
+        <div class="form-container">
+            <div class="row personal-info">
+                <div class="info-group">
+                    <h4>Student Information</h4>
+                    <p><strong>Student Name:</strong> <span id="infoStudentName"></span></p>
+                    <p><strong>Student ID Number:</strong> <span id="infoStudentIdNum"></span></p>
+                    <p><strong>Course:</strong> <span id="infoCourse"></span></p>
+                    <p><strong>Academic Year:</strong> <span id="infoAcademicYear"></span></p>
+                </div>
+
+                <div class="info-group">
+                    <h4>Violation Details</h4>
+                    <p><strong>Violation:</strong> <span id="infoViolationType"></span></p>
+                    <p><strong>Date of Violation:</strong> <span id="infoViolationDate"></span></p>
+                    <p><strong>Time of Violation:</strong> <span id="infoViolationTime"></span></p>
+                    <p><strong>Offense Level:</strong> <span id="infoOffenseLevel"></span></p>
+                    <p><strong>Disciplinary Action:</strong> <span id="infoDisciplinaryAction"></span></p>
+                    <p><strong>Offense Type:</strong> <span id="infoOffenseType"></span></p>
+                    <p><strong>Location:</strong> <span id="infoLocation"></span></p>
+                    <p><strong>Description:</strong> <span id="infoDescription"></span></p>
+                    <p><strong>Name of Reporting Person:</strong> <span id="infoReportingName"></span></p>
+                    <p><strong>Role:</strong> <span id="infoReportingRole"></span></p>
+                    <p><strong>Contact Number:</strong> <span id="infoReportingContact"></span></p>
+                    <p><strong>Status:</strong> <span id="infoStatus"></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="~/js/viewviolation.js"></script>
+    <script src="~/js/logout.js"></script>
+</body>
+
+</html>
