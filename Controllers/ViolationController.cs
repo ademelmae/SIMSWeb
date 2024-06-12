@@ -50,7 +50,7 @@ namespace SIMSWeb.Controllers
                 existingViolation.OffenseLevel = updatedData.OffenseLevel;
                 existingViolation.ViolationType = updatedData.ViolationType;
                 existingViolation.ViolationDate = updatedData.ViolationDate;
-                existingViolation.ViolationDate = updatedData.ViolationTime;
+                existingViolation.ViolationTime = updatedData.ViolationTime;
                 existingViolation.DisciplinaryAction = updatedData.DisciplinaryAction;
                 existingViolation.OffenseType = updatedData.OffenseType;
                 existingViolation.Location = updatedData.Location;
