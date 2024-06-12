@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 17, 2024 at 05:09 AM
+-- Generation Time: Jun 12, 2024 at 05:32 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.0.30
 
@@ -89,7 +89,7 @@ CREATE TABLE `student` (
 --
 
 INSERT INTO `student` (`studentId`, `firstname`, `middlename`, `lastname`, `birthdate`, `age`, `gender`, `phone`, `email`, `password`, `province`, `city`, `barangay`, `street`, `zip`, `studentIdNum`, `department`, `course`, `parentName`, `parentEmail`, `parentHome`, `parentContact`, `yearLevel`, `academicYear`) VALUES
-(88, 'Ademel Ma', 'Verdida', 'Viagedor', '2001-08-16', 22, 'Female', '09954753783', 'ademelviagedor22@gmail.com', 'r437G1Xp', 'Cebu', 'Bogo', 'Sudlonon', 'Capt. Aballe St.', 6010, '202000072', 'College of Computer Studies', '', 'Editha V. Viagedor', 'edithaviagedor@gmail.com', 'Capt. Aballe St. Bogo City, Cebu', '09363991906', '4th year', '2023-2024');
+(88, 'Ademel Mae', 'Verdida', 'Viagedor', '2001-08-16', 22, 'Female', '09954753783', 'ademelviagedor22@gmail.com', 'r437G1Xp', 'Cebu', 'Bogo', 'Sudlonon', 'Capt. Aballe St.', 6010, '202000072', 'College of Computer Studies', '', 'Editha V. Viagedor', 'edithaviagedor@gmail.com', 'Capt. Aballe St. Bogo City, Cebu', '09363991906', '4th year', '2023-2024');
 
 -- --------------------------------------------------------
 
@@ -122,8 +122,8 @@ CREATE TABLE `studentviolation` (
 --
 
 INSERT INTO `studentviolation` (`violationId`, `studentName`, `studentIdNum`, `course`, `academicYear`, `violationType`, `violationDate`, `violationTime`, `offenseLevel`, `disciplinaryAction`, `offenseType`, `location`, `description`, `reportingName`, `reportingRole`, `reportingContact`, `status`) VALUES
-(39, 'Ademel Mae  Verdida Viagedor', '202000072', 'Bachelor of Science in Information Technology', '2023-2024', '', '2024-05-16', '09:55', '2nd', 'Verbal Reprimand with marked in the teacher\'s class record', 'minor', 'fgdgfdg', 'fgdfdgdfg', 'asdsadsad', 'dasdasd', '09256656868', 'ongoing'),
-(40, 'Ademel Mae  Verdida Viagedor', '202000072', 'Bachelor of Science in Information Technology', '2023-2024', 'Tardiness', '2024-05-16', '10:33', '1st', 'Marked in the teacher\'s class record', 'major', 'dfg', 'dfgfdgfdg', 'dfgdfgdfg', 'dfgfdgfdg', '54645646456', 'resolved');
+(40, 'Ademel Mae  Verdida Viagedor', '202000072', 'Bachelor of Science in Information Technology', '2023-2024', 'Absence from Class', '2024-05-16', '10:33', '1st', 'Marked in the teacher\'s class record', 'major', 'dfg', 'dfgfdgfdg', 'dfgdfgdfg', 'dfgfdgfdg', '54645646456', 'resolved'),
+(41, 'Ademel Ma Verdida Viagedor', '202000072', 'Bachelor of Science in Information Technology', '2023-2024', 'Tardiness', '2024-06-11', '22:50', '1st', 'Marked in the teacher\'s class record', 'minor', 'dsadad', 'asdasd', 'dasdad', 'dsasdsad', '09954753783', 'pending');
 
 -- --------------------------------------------------------
 
@@ -216,13 +216,13 @@ ALTER TABLE `disciplinaryaction`
 -- AUTO_INCREMENT for table `student`
 --
 ALTER TABLE `student`
-  MODIFY `studentId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=89;
+  MODIFY `studentId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=90;
 
 --
 -- AUTO_INCREMENT for table `studentviolation`
 --
 ALTER TABLE `studentviolation`
-  MODIFY `violationId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
+  MODIFY `violationId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=42;
 
 --
 -- AUTO_INCREMENT for table `useraccount`
