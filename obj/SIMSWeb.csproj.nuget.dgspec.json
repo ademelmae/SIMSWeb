@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Ademel Mae\\Desktop\\SIMSWeb\\SIMSWeb.csproj": {}
+    "C:\\Users\\Ademel Mae\\Documents\\SIMSWeb\\SIMSWeb.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Ademel Mae\\Desktop\\SIMSWeb\\SIMSWeb.csproj": {
+    "C:\\Users\\Ademel Mae\\Documents\\SIMSWeb\\SIMSWeb.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Ademel Mae\\Desktop\\SIMSWeb\\SIMSWeb.csproj",
+        "projectUniqueName": "C:\\Users\\Ademel Mae\\Documents\\SIMSWeb\\SIMSWeb.csproj",
         "projectName": "SIMSWeb",
-        "projectPath": "C:\\Users\\Ademel Mae\\Desktop\\SIMSWeb\\SIMSWeb.csproj",
+        "projectPath": "C:\\Users\\Ademel Mae\\Documents\\SIMSWeb\\SIMSWeb.csproj",
         "packagesPath": "C:\\Users\\Ademel Mae\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Ademel Mae\\Desktop\\SIMSWeb\\obj\\",
+        "outputPath": "C:\\Users\\Ademel Mae\\Documents\\SIMSWeb\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Ademel Mae\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -71,6 +71,10 @@
             "Microsoft.Extensions.Caching.Memory": {
               "target": "Package",
               "version": "[7.0.0, )"
+            },
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[9.0.0, )"
             },
             "Pomelo.EntityFrameworkCore.MySql": {
               "target": "Package",

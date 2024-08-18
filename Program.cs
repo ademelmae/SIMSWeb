@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.AspNetCore.Cors;
+using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 var configuration = new ConfigurationBuilder()
@@ -14,7 +15,15 @@ var configuration = new ConfigurationBuilder()
 // builder.WebHost.UseUrls("https://localhost:7205", "https://192.168.137.33:7205");
 
 builder.Services.AddControllersWithViews();
-builder.Services.AddDbContext<simsdbContext>();
+var connectionString = configuration.GetConnectionString("DefaultConnection");
+
+
+var serverVersion = new MySqlServerVersion(new Version(8, 0, 23));
+
+
+builder.Services.AddDbContext<simsdbContext>(options =>
+    options.UseMySql(connectionString, serverVersion));
+    
 builder.Services.AddSingleton(configuration);
 
 builder.Services.AddCors(options =>

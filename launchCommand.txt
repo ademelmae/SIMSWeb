@@ -1,0 +1,2 @@
+For running on http ngrok:
+dotnet run --launch-profile http
