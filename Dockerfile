@@ -26,6 +26,6 @@ COPY --from=build /app/publish .
 
 # Expose the port on which the application will run
 EXPOSE 80
-
-# Define the entry point for the container
+  
+# Define the entry point for the container  
 ENTRYPOINT ["dotnet", "SIMSWeb.dll"]
